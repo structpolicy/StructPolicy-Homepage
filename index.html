@@ -228,12 +228,12 @@
 <!-- 新增 4 视频并列部分 -->
 <section class="section">
   <div class="container is-max-desktop">
-    <h2 class="title is-3 has-text-centered">Visualization of Results</h2> <!-- 统一标题 -->
+    <h2 class="title is-3 has-text-centered">Real-World Experiment--Open the Door</h2> <!-- 统一标题 -->
     <div class="columns is-multiline is-centered is-variable is-2"> <!-- is-variable is-2 添加了列间距 -->
       
     <!-- 第 1 视频列 -->
     <div class="column is-one-quarter has-text-centered">
-      <h3 class="title is-5">Visual Change 1</h3>
+      <h3 class="title is-5">No Change</h3>
       <video poster="" id="result-video1" autoplay controls muted loop preload="auto" style="width:100%;"> 
         <source src="static/videos/Open-Door/No-Change.mp4" type="video/mp4">
       </video>
@@ -241,7 +241,7 @@
 
     <!-- 第 2 视频列 -->
     <div class="column is-one-quarter has-text-centered">
-      <h3 class="title is-5">Visual Change 2</h3>
+      <h3 class="title is-5">Background 2</h3>
       <video poster="" id="result-video2" autoplay controls muted loop preload="auto" style="width:100%;">
         <source src="static/videos/Open-Door/Background.mp4" type="video/mp4">
       </video>
@@ -249,7 +249,7 @@
 
     <!-- 第 3 视频列 -->
     <div class="column is-one-quarter has-text-centered">
-      <h3 class="title is-5">Visual Change 3</h3>
+      <h3 class="title is-5">Light</h3>
       <video poster="" id="result-video3" autoplay controls muted loop preload="auto" style="width:100%;">
         <source src="static/videos/Open-Door/Light.mp4" type="video/mp4">
       </video>
@@ -257,7 +257,7 @@
 
     <!-- 第 4 视频列 -->
     <div class="column is-one-quarter has-text-centered">
-      <h3 class="title is-5">Visual Change 4</h3>
+      <h3 class="title is-5">Camera Viewpoint</h3>
       <video poster="" id="result-video4" autoplay controls muted loop preload="auto" style="width:100%;">
         <source src="static/videos/Open-Door/Camera.mp4" type="video/mp4">
       </video>
@@ -266,11 +266,13 @@
     </div>
 
     <!-- 视频下方的统一描述 -->
-    <div class="columns is-centered pt-5"> <!-- pt-5 是 Bulma 的 padding-top: 1.5rem，用于分隔视频和描述 -->
+    <div class="columns is-centered pt-5">
       <div class="column is-four-fifths">
-        <h3 class="subtitle has-text-centered">
-          StructPolicy achieves high success rates across diverse manipulation tasks under various visual changes (e.g., changes in lighting, background, and camera viewpoints), demonstrating superior robustness against visual domain shifts compared to baseline models.
-        </h3>
+        <div class="column is-four-fifths">
+            <p class="subtitle has-text-centered is-size-5">
+              Real-World "Open the Door" Demos: Presented here are live demonstrations of the "Open the Door" task across four scenarios. The policy was trained solely under the **No-Change** condition and is evaluated under **No-Change, Background, Light, and Camera** scenarios. Scroll down to explore more tasks.
+            </p>
+        </div>
       </div>
     </div>
   </div>
