@@ -1,0 +1,3 @@
+ffmpeg -i "static/videos/Open-Door/Light_brighter.mp4" -vcodec libx264 -acodec aac -pix_fmt yuv420p -movflags +faststart "static/videos/Open-Door/11.mp4"
+
+ffmpeg -i "static/videos/Open-Door/Light.mp4" -vf "eq=brightness=0.3" -c:a copy "static/videos/Open-Door/Light_brighter.mp4"
