@@ -214,12 +214,23 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column is-four-fifths">
-          <img src="static/pdfs/Insight.pdf" alt="First research result visualization" loading="lazy"/>
+          <!-- 使用 iframe 标签来嵌入 PDF 文件 -->
+          <iframe 
+            src="static/pdfs/Insight.pdf" 
+            width="100%" 
+            height="600px" 
+            style="border: none;"
+            title="Insight Diagram PDF"
+          >
+            <!-- 浏览器不支持 iframe 时的提示 -->
+            <p>您的浏览器不支持 PDF 预览。请<a href="static/pdfs/Insight.pdf" target="_blank">点击此处下载 Insight.pdf</a>。</p>
+          </iframe>
+
           <h2 class="subtitle has-text-centered">
                 \textit{(a), (b).} The IL policy fails to complete manipulation tasks (\eg, open the drawer) under visual domain shifts (\eg, background color changes).
     \textit{(c).} StructPolicy first uses StructCon to construct a Structure Map that encodes fine-grained object structures invariant to visual domain shifts.
-    It then leverages StructEncoder to extract domain-invariant map features that indicate how objects are structured and where them can be manipulated.
-    By providing these features to the IL policy, StructPolicy equips IL policy with a comprehensive understanding of objects to enhance the robustness aga
+    它随后利用 StructEncoder 来提取域不变的地图特征，这些特征表明了物体是如何构造的以及它们可以在哪里被操作。
+    通过向 IL 策略提供这些特征，StructPolicy 使 IL 策略对物体有了全面的理解，从而增强了对视觉域变化的鲁棒性。
           </h2>
         </div>
       </div>
