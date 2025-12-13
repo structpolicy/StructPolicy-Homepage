@@ -170,6 +170,22 @@
     ]
   }
   </script>
+
+  <!-- MathJax CDN for LaTeX rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+  <!-- 可选：配置 MathJax 使用$或$$作为行内和块级公式的分隔符，这在您的示例中是必要的 -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  
 </head>
 <body>
 
@@ -216,7 +232,7 @@
         <div class="column is-four-fifths">
           <img src="static/images/Insight.jpg" alt="StructPolicy Insight Diagram" loading="lazy"/>
           <h2 class="subtitle has-text-centered">
-    \textit{(a), (b).} The IL policy fails to complete manipulation tasks (\eg, open the drawer) under visual domain shifts (\eg, background color changes). \textit{(c).} StructPolicy first uses StructCon to construct a Structure Map that encodes fine-grained object structures invariant to visual domain shifts. It then leverages StructEncoder to extract domain-invariant map features that indicate how objects are structured and where them can be manipulated. By providing these features to the IL policy, StructPolicy equips IL policy with a comprehensive understanding of objects to enhance the robustness against visual domain shifts, thereby improving manipulation accuracy.
+    $\textit{(a), (b).}$ The IL policy fails to complete manipulation tasks (e.g., open the drawer) under visual domain shifts (e.g., background color changes). $\textit{(c).}$ StructPolicy first uses StructCon to construct a Structure Map that encodes fine-grained object structures invariant to visual domain shifts. It then leverages StructEncoder to extract domain-invariant map features that indicate how objects are structured and where them can be manipulated. By providing these features to the IL policy, StructPolicy equips IL policy with a comprehensive understanding of objects to enhance the robustness against visual domain shifts, thereby improving manipulation accuracy.
           </h2>
         </div>
       </div>
