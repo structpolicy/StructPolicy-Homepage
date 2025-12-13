@@ -229,7 +229,8 @@
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
-        <div class="column is-four-fifths">
+        <!-- 将宽度从 is-four-fifths 更改为 is-10 (或 is-11) -->
+        <div class="column is-11"> 
           <img src="static/images/Insight.jpg" alt="StructPolicy Insight Diagram" loading="lazy"/>
           <h2 class="subtitle has-text-centered">
     $\textit{(a), (b).}$ The IL policy fails to complete manipulation tasks (e.g., open the drawer) under visual domain shifts (e.g., background color changes). $\textit{(c).}$ StructPolicy first uses StructCon to construct a Structure Map that encodes fine-grained object structures invariant to visual domain shifts. It then leverages StructEncoder to extract domain-invariant map features that indicate how objects are structured and where them can be manipulated. By providing these features to the IL policy, StructPolicy equips IL policy with a comprehensive understanding of objects to enhance the robustness against visual domain shifts, thereby improving manipulation accuracy.
