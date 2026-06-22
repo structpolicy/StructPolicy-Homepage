@@ -290,6 +290,34 @@ body {
   font-weight: 500;
 }
 
+.experiment-carousel {
+  margin-top: 2rem;
+}
+
+.experiment-carousel .experiment-slide {
+  font-size: 1rem;
+  min-height: 100%;
+}
+
+.experiment-carousel .experiment-slide:hover {
+  transform: none;
+}
+
+.experiment-carousel .columns {
+  align-items: flex-start;
+}
+
+.experiment-carousel video {
+  aspect-ratio: 16 / 9;
+  background: #000;
+  object-fit: contain;
+}
+
+.experiment-carousel .title.is-5 {
+  min-height: 2.6em;
+  margin-bottom: 0.75rem;
+}
+
 /* Pagination and Misc Improvements */
 .slider-pagination .slider-page {
   background: var(--primary-color);
@@ -748,6 +776,5 @@ a:focus {
     box-shadow: none !important;
   }
 }
-
 
 

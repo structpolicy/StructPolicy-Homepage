@@ -92,7 +92,7 @@ window.addEventListener('scroll', function() {
 
 // Video carousel autoplay when in view
 function setupVideoCarouselAutoplay() {
-    const carouselVideos = document.querySelectorAll('.results-carousel video');
+    const carouselVideos = document.querySelectorAll('.results-carousel:not(.experiment-carousel) video');
     
     if (carouselVideos.length === 0) return;
     
@@ -131,8 +131,17 @@ $(document).ready(function() {
 		autoplaySpeed: 5000,
     }
 
-	// Initialize all div with carousel class
-    var carousels = bulmaCarousel.attach('.carousel', options);
+    var experimentOptions = {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        loop: true,
+        infinite: true,
+        autoplay: false,
+    }
+
+	// Initialize carousel sections
+    bulmaCarousel.attach('.experiment-carousel', experimentOptions);
+    bulmaCarousel.attach('.carousel:not(.experiment-carousel)', options);
 	
     bulmaSlider.attach();
     
