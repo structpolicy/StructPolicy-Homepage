@@ -7,16 +7,16 @@
    <meta name="google-site-verification" content="C05lXZ6JhMpSwrR3neBt3vFbXhNQDZpGOOeCs1pmZCA" />
   
   <!-- Primary Meta Tags -->
-  <meta name="title" content="StructPolicy: Structure-Guided Imitation Learning Robust to Visual Domain Shifts - Anonymous">
+  <meta name="title" content="StructPolicy: Structure-Guided Imitation Learning Robust to Visual Domain Shifts - Zehao Du et al.">
   <meta name="description" content="Imitation Learning (IL) offers an effective approach for robot manipulation by learning a mapping from visual inputs to actions. However, this paradigm suffers from poor robustness under visual domain shifts (e.g., lighting conditions, camera viewpoints, etc.), often failing to perform manipulation. Our key insight in tackling this problem is to construct a Structure Map encoding the fine-grained object structures that remain invariant across visual domains and vital for manipulation. Based on this insight, we propose StructPolicy, a method elaborately designed to incorporate the domain-invariant Structure Map into the IL policy through two modules: StructCon and StructEncoder. StructCon is an automated Structure Map construction module that leverages structure primitives to enable flexible transformation and composition to form a wide range of objects. StructEncoder is a hierarchical network that efficiently captures structural relationships and affordance from Structure Map. This provides the IL policy with both domain-invariant and structurally-aware features, guiding it toward robust manipulation under visual domain shifts. We extensively evaluate StructPolicy across 49 manipulation tasks in multiple benchmarks and diverse real-world tasks under various visual changes. The results demonstrate consistent and significant performance improvements across all tasks, validating that StructPolicy enhances the effectiveness and robustness against visual domain shifts of the IL policy, improving manipulation accuracy.">
   <meta name="keywords" content="Imitation Learning, Robot Manipulation, Embodied Intelligence, Machine Learning, Computer Vision, AI">
-  <meta name="author" content="Anonymous, Anonymous">
+  <meta name="author" content="Zehao Du, Jiude Wei, Cewu Lu, Jianhua Sun">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <meta property="og:site_name" content="Anonymous">
+  <meta property="og:site_name" content="StructPolicy">
   <meta property="og:title" content="StructPolicy: Structure-Guided Imitation Learning Robust to Visual Domain Shifts">
   <meta property="og:description" content="Imitation Learning (IL) offers an effective approach for robot manipulation by learning a mapping from visual inputs to actions. However, this paradigm suffers from poor robustness under visual domain shifts (e.g., lighting conditions, camera viewpoints, etc.), often failing to perform manipulation. Our key insight in tackling this problem is to construct a Structure Map encoding the fine-grained object structures that remain invariant across visual domains and vital for manipulation. Based on this insight, we propose StructPolicy, a method elaborately designed to incorporate the domain-invariant Structure Map into the IL policy through two modules: StructCon and StructEncoder. StructCon is an automated Structure Map construction module that leverages structure primitives to enable flexible transformation and composition to form a wide range of objects. StructEncoder is a hierarchical network that efficiently captures structural relationships and affordance from Structure Map. This provides the IL policy with both domain-invariant and structurally-aware features, guiding it toward robust manipulation under visual domain shifts. We extensively evaluate StructPolicy across 49 manipulation tasks in multiple benchmarks and diverse real-world tasks under various visual changes. The results demonstrate consistent and significant performance improvements across all tasks, validating that StructPolicy enhances the effectiveness and robustness against visual domain shifts of the IL policy, improving manipulation accuracy.">
   <!-- TODO: Replace with your actual website URL -->
@@ -25,31 +25,30 @@
   <meta property="og:image" content="https://structpolicy.github.io/StructPolicy-Homepage/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="og:image:alt" content="StructPolicy - Research Preview">
   <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:author" content="Zehao Du">
   <meta property="article:section" content="Research">
   <meta property="article:tag" content="KEYWORD1">
   <meta property="article:tag" content="KEYWORD2">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:creator" content="">
+  <meta name="twitter:title" content="StructPolicy: Structure-Guided Imitation Learning Robust to Visual Domain Shifts">
   <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="twitter:description" content="StructPolicy incorporates domain-invariant Structure Maps into imitation learning for robust robot manipulation under visual domain shifts.">
   <!-- TODO: Same as social preview image above -->
   <meta name="twitter:image" content="https://structpolicy.github.io/StructPolicy-Homepage/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:image:alt" content="StructPolicy - Research Preview">
 
   <!-- Academic/Research Specific -->
   <meta name="citation_title" content="StructPolicy: Structure-Guided Imitation Learning Robust to Visual Domain Shifts">
-  <meta name="citation_author" content="Anonymous, Anonymous">
-  <meta name="citation_author" content="Anonymous, Anonymous">
+  <meta name="citation_author" content="Zehao Du">
+  <meta name="citation_author" content="Jiude Wei">
+  <meta name="citation_author" content="Cewu Lu">
+  <meta name="citation_author" content="Jianhua Sun">
   <meta name="citation_publication_date" content="2025">
   <meta name="citation_conference_title" content="CVPR">
   <meta name="citation_pdf_url" content="https://structpolicy.github.io/StructPolicy-Homepage/static/pdfs/paper.pdf">
@@ -69,7 +68,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>StructPolicy: Structure-Guided Imitation Learning Robust to Visual Domain Shifts - Anonymous | Academic Research</title>
+  <title>StructPolicy: Structure-Guided Imitation Learning Robust to Visual Domain Shifts - Zehao Du et al. | Academic Research</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/png" href="static/images/favicon.png">
@@ -109,50 +108,66 @@
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "StructPolicy: Structure-Guided Imitation Learning Robust to Visual Domain Shifts",
+    "description": "StructPolicy incorporates domain-invariant Structure Maps into imitation learning for robust robot manipulation under visual domain shifts.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Zehao Du",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Shanghai Jiao Tong University"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Jiude Wei",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "Shanghai Jiao Tong University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Cewu Lu",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Shanghai Jiao Tong University"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Jianhua Sun",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "Shanghai Jiao Tong University"
         }
       }
     ],
     "datePublished": "2024-01-01",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "CVPR"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "url": "https://structpolicy.github.io/StructPolicy-Homepage/",
+    "image": "https://structpolicy.github.io/StructPolicy-Homepage/static/images/social_preview.png",
+    "keywords": ["imitation learning", "robot manipulation", "structure map", "machine learning", "computer vision"],
     "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "citation": "Du, Zehao and Wei, Jiude and Lu, Cewu and Sun, Jianhua. StructPolicy: Structure-Guided Imitation Learning Robust to Visual Domain Shifts.",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+      "@id": "https://structpolicy.github.io/StructPolicy-Homepage/"
     },
     "about": [
       {
         "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
+        "name": "Robot Manipulation"
       },
       {
         "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
+        "name": "Imitation Learning"
       }
     ]
   }
@@ -163,13 +178,10 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "name": "Shanghai Jiao Tong University",
+    "url": "https://www.sjtu.edu.cn/",
+    "logo": "https://structpolicy.github.io/StructPolicy-Homepage/static/images/favicon.png",
+    "sameAs": []
   }
   </script>
 
@@ -204,19 +216,21 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">StructPolicy: Structure-Guided Imitation Learning Robust to Visual Domain Shifts</h1>
-            <!-- <div class="is-size-5 publication-authors"> -->
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <!-- <span class="author-block"> -->
-                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous</a><sup>*</sup>,</span> -->
-                <!-- <span class="author-block"> -->
-                  <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Anonymous</a><sup>*</sup>,</span> -->
-                  <!-- <span class="author-block"> -->
-                    <!-- <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Anonymous</a> -->
-                  <!-- </span> -->
-                  <!-- </div> -->
-
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Anonymous</span>
+                    <span class="author-block">Zehao Du<sup>*</sup>,</span>
+                    <span class="author-block">Jiude Wei<sup>*</sup>,</span>
+                    <span class="author-block">Cewu Lu,</span>
+                    <span class="author-block">Jianhua Sun<sup>&dagger;</sup></span>
+                  </div>
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Shanghai Jiao Tong University</span>
+                  </div>
+                  <div class="is-size-6 publication-authors">
+                    <span class="author-block"><sup>*</sup>Equal contribution.</span>
+                    <span class="author-block"><sup>&dagger;</sup>Corresponding author.</span>
+                  </div>
+                  <div class="is-size-6 publication-authors">
+                    <span class="author-block">duzehao_2023jd, wjd_kznwl, lucewu, gothic@sjtu.edu.cn</span>
                   </div>
 
             </div>
@@ -595,12 +609,12 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
+      <pre id="bibtex-code"><code>@article{du2025structpolicy,
+  title={StructPolicy: Structure-Guided Imitation Learning Robust to Visual Domain Shifts},
+  author={Du, Zehao and Wei, Jiude and Lu, Cewu and Sun, Jianhua},
+  journal={CVPR},
+  year={2025},
+  url={https://structpolicy.github.io/StructPolicy-Homepage/}
 }</code></pre>
     </div>
 </section> -->
